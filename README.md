@@ -10,12 +10,6 @@
 
 > Watchpod is a minikube addon that detects file changes, then automates the build and deployment of local k8 nodes 
 
-
-
-
-
-
-
 [Minikube]: https://github.com/kubernetes/minikube
 [Minikube clone]: https://github.com/MinikubeAddon/minikube
 [build guide]: https://github.com/kubernetes/minikube/blob/master/docs/contributors/build_guide.md
@@ -29,10 +23,9 @@ kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master
 minikube service watchpod
 ```
 
-This will open a localhost with your app. 
+This will deploy and open your app on localhost
 
-### Demo
-Video goes here
+## Demo
 ![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/Watchpod-smallest.gif)
 
 
