@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubernetes-frasaja
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubernetes-frasaja
+  template:
+    metadata:
+      labels:
+        app: kubernetes-frasaja
+    spec:
+      containers:
+      - name: kubernetes-frasaja
+        image: gcr.io/frasaja-1/frasaja:v1
+        volumeMounts:
+        - mountPath: /var/run/docker.sock
+          name: docker-sock-volume
+        - mountPath: /usr/src/app/test2
+          name: host-mount
+        # - mountPath: /usr/src/app/test
+        #   name: host-mount
+      volumes:
+      # attach host's docker socket (how we make api requests to docker daemon)
+      - name: docker-sock-volume
+        hostPath:
+          path: /var/run/docker.sock
+          type: Socket
+      # attach host's files that we want to watch
+      - name: host-mount
+        hostPath:
+          path: /mount-9p
+          type: Directory
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: kubernetes-frasaja
+spec:
+  type: NodePort
+  selector:
+    app: kubernetes-frasaja
+  ports:
+  - name: kubernetes-frasaja
+    port: 8080
+    targetPort: 8080
