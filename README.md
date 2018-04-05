@@ -1,4 +1,9 @@
-![alt text][logo]
+<p align="center">
+  <a href="https://gulpjs.com">
+    <img height="257" width="114" src=[logo]>
+  </a>
+  <p align="center">Minikube file watcher and build automator</p>
+</p>
 
 # Watchpod &middot; ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
