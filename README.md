@@ -39,10 +39,10 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
 
 <h2 align="center">Core Team</h2> 
 
-<div align="center"> 
- <table align="center"> 
-  <tbody align="center"> 
-   <tr align="center"> 
+<p align="center"> 
+ <table> 
+  <tbody> 
+   <tr> 
     <td align="center" valign="top"> 
      <img width="150" height="150" src="https://github.com/ASimpleHuman.png?s=150"> 
      <br>
@@ -67,7 +67,7 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
    </tr> 
   </tbody> 
  </table> 
-</div>
+</p>
 
 
 ## Contributing
