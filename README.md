@@ -19,8 +19,7 @@ This will open a localhost with your app.
 
 ### Demo
 Video goes here
-![Alt Text](https://cdn.rawgit.com/MinikubeAddon/watchpod/c11e3bf7/Watchpod-first-vid.gif)
-
+<img src='https://cdn.rawgit.com/MinikubeAddon/watchpod/234ece03/Watchpod-smaller%20-%20converted%20with%20Clipchamp.mp4' width='600' alt='npm start'>
 ## Applying the manifest 
 
 ```
