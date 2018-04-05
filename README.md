@@ -10,16 +10,21 @@ Watchpod is a minikube addon that detects file changes, then automates the build
 
 ```
 minikube start
-minikube mount /{place directory for files to watch}:mount-9p
+minikube mount /{place directory for files to watch}:mount-9p  #(run this line in new terminal tab. Keep open)
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
 minikube service watchpod
 ```
 
 This will open a localhost with your app. 
-* note: there is a build time between running kubectl apply and minikube service. We are working to reduce it
+- note: there is a build time between running kubectl apply and minikube service. We are working to reduce it
 
 Video goes here
 
+## Applying the manifest 
+
+```
+kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
+```
 
 ## Install on Minikube
 
