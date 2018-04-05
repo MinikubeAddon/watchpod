@@ -19,7 +19,7 @@ This will open a localhost with your app.
 - note: there is a build time between running kubectl apply and minikube service. We are working to reduce it
 
 Video goes here
-<img src='https://cdn.rawgit.com/MinikubeAddon/watchpod/c11e3bf7/Watchpod-first-vid.svg' width='600' alt='npm start'>
+<img src='https://cdn.rawgit.com/MinikubeAddon/watchpod/c11e3bf7/Watchpod-first-vid.mp4' width='600' alt='npm start'>
 
 ## Applying the manifest 
 
