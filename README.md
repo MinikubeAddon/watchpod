@@ -36,6 +36,35 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
  ./out/minikube addons enable freshpod
 ```
 
+
+<h2 align="center">Core Team</h2> 
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td align="center" valign="top"> 
+    <img width="150" height="150" src="https:github.com/ASimpleHuman.png?s=150"> 
+    <br>
+    <a href="https://github.com/ASimpleHuman"> Frank Hu </a>  
+    <a href="https://www.linkedin.com/in/frankjunhu/"> LinkedIn </a>  
+   </td>
+   <td align="center" valign="top"> 
+    <img width="150" height="150" src="https://github.com/sarahheacock.png?s=150"> 
+    <br>
+    <a href="https://github.com/sarahheacock"> Sarah Heacock </a>
+    <a href="https://www.linkedin.com/in/sarah-heacock-ab8677126"/> LinkedIn </a>  
+   </td>
+   <td align="center" valign="top"> 
+    <img width="150" height="150" src="https://github.com/jmw1493.png?s=150"> 
+    <br>
+    <a href="https://github.com/jmw1493"> Jared Weiss </a> 
+    <a href="https://www.linkedin.com/in/jaredmweiss/"> LinkedIn </a>  
+   </td>
+  </tr> 
+ </tbody> 
+</table> 
+
+
 ## Contributing
 
 We'd love to have your helping hand on Watchpod. Please reach out if interested in contributing
