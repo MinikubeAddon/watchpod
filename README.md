@@ -1,4 +1,6 @@
-# Watchpod &middot; ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+# Watchpod &middot: Minikube file watcher and build automator 
+
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 <p align="center">
   <a href="https://github.com/MinikubeAddon/watchpod">
