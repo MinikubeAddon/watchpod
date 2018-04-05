@@ -32,7 +32,7 @@ This will deploy and open your app on localhost
 ## Stepwise Guide
 1. Run minikube start in a terminal tab
 2. Open a seperate terminal window. Mount on working directory where files to be watched live by running:
-`minikube mount /"path to files":mount-9p`     
+`minikube mount /"path to files":mount-9p`  
  - `ex: minikube mount /Users/path/to/files/:mount-9p`
  - leave the tab used to mount open. Move back to the tab where minikube is running.
 3. With minikube started, run `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`.
