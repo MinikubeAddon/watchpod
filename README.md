@@ -1,4 +1,6 @@
+<p align="center>
 # Watchpod &middot; ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+</p>
 
 <p align="center">
   <a href="https://github.com/MinikubeAddon/watchpod">
