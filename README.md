@@ -40,8 +40,8 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
 <h2 align="center">Core Team</h2> 
 
 <table> 
- <tbody align="center"> 
-  <tr> 
+ <tbody> 
+  <tr align="center"> 
    <td align="center" valign="top"> 
     <img width="150" height="150" src="https://github.com/ASimpleHuman.png?s=150"> 
     <br>
