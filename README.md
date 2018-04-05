@@ -19,10 +19,10 @@ This will open a localhost with your app.
 
 ### Demo
 Video goes here
-<img src='https://cdn.rawgit.com/MinikubeAddon/watchpod/234ece03/Watchpod-smaller%20-%20converted%20with%20Clipchamp.mp4' width='600' alt='npm start'>
 ## Applying the manifest 
 
 ```
+![Alt Text](https://cdn.rawgit.com/MinikubeAddon/watchpod/a0dd6d53/Watchpod-smallest.gif)
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
 ```
 
