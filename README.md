@@ -41,7 +41,7 @@ Watchpod is currently not available on [Minikube]. We are in the process of tigh
 You can fork our [Minikube clone], then follow the instructions on [build guide] to run the addon from Minikube locally:
 
 ```
- ./out/minikube addons enable freshpod
+ ./out/minikube addons enable watchpod
 ```
 
 
