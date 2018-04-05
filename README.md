@@ -16,8 +16,8 @@ minikube service watchpod
 ```
 
 This will open a localhost with your app. 
-- note: there is a build time between running kubectl apply and minikube service. We are working to reduce it
 
+### Demo
 Video goes here
 ![Alt Text](https://cdn.rawgit.com/MinikubeAddon/watchpod/c11e3bf7/Watchpod-first-vid.gif)
 
