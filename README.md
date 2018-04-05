@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://gulpjs.com">
-    <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
-  </a>
+  <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
   <p align="center">Minikube file watcher and build automator</p>
 </p>
 
