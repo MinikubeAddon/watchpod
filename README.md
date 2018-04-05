@@ -26,7 +26,7 @@ minikube service watchpod
 This will deploy and open your app on localhost
 
 ## Demo
-![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)
+![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/Watchpod-smallest.gif)
 
 
 ## Stepwise Guide
