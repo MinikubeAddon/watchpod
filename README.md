@@ -12,7 +12,7 @@ Watchpod is a minikube addon that detects file changes, then automates the build
 ## Run Locally
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/frasajaImage/master/clone/deployment.yaml
+kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
 ```
 
 ## Install on Minikube
