@@ -35,8 +35,8 @@ This will deploy and open your app on localhost
 `minikube mount /"path to files":mount-9p`  
 - `ex: minikube mount /Users/path/to/files/:mount-9p`  
 - leave the tab used to mount open. Move back to the tab where minikube is running
-3. In non-mount tab, run `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`
-4. Run `minikube service watchpod`
+3. Run `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`
+4. In same non-mount terminal tab, run `minikube service watchpod`
 5. The addon will now rebuild your application when a file in the mounted directory is changed
 
 
