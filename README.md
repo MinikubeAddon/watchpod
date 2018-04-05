@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://gulpjs.com">
-    <img height="257" width="114" src=[logo]>
+    <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
   </a>
   <p align="center">Minikube file watcher and build automator</p>
 </p>
@@ -12,7 +12,6 @@ Watchpod is a minikube addon that detects file changes, then automates the build
 [Minikube]: https://github.com/kubernetes/minikube
 [Minikube clone]: https://github.com/MinikubeAddon/minikube
 [build guide]: https://github.com/kubernetes/minikube/blob/master/docs/contributors/build_guide.md
-[logo]: https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png
 
 ## Quick Overview
 
