@@ -5,7 +5,7 @@
   </a>
 </p>
 
-<p align ="left"> Watchpod is a minikube addon that detects file changes, then automates the build and deployment of local k8 nodes </p> 
+> <p align ="left"> Watchpod is a minikube addon that detects file changes, then automates the build and deployment of local k8 nodes </p> 
 
 [Minikube]: https://github.com/kubernetes/minikube
 [Minikube clone]: https://github.com/MinikubeAddon/minikube
