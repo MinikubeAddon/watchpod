@@ -22,7 +22,7 @@ Video goes here
 ## Applying the manifest 
 
 ```
-![Alt Text](https://cdn.rawgit.com/MinikubeAddon/watchpod/a0dd6d53/Watchpod-smallest.gif)
+![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/Watchpod-smallest.gif)
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
 ```
 
