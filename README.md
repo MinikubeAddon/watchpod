@@ -6,14 +6,20 @@ Watchpod is a minikube addon that detects file changes, then automates the build
 [Minikube clone]: https://github.com/MinikubeAddon/minikube
 [build guide]: https://github.com/kubernetes/minikube/blob/master/docs/contributors/build_guide.md
 
-## Demo
-
-
-## Run Locally
+## Quick Overview
 
 ```
+minikube start
+minikube mount /{place directory for files to watch}:mount-9p
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
+minikube service watchpod
 ```
+
+This will open a localhost with your app. 
+* note: there is a build time between running kubectl apply and minikube service. We are working to reduce it
+
+Video goes here
+
 
 ## Install on Minikube
 
@@ -24,12 +30,7 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
  ./out/minikube addons enable freshpod
 ```
 
-## Step by Step
+## Contributing
 
-1. Run minikube start in a terminal tab
-2. Open a seperate terminal window. Mount on working directory where files are watched by running `minikube mount /"path to files":mount-9p`
-`ex: minikube mount /Users/Frasaja/Github/:mount-9p`
-- leave the tab used to mount open. Move back to the tab where minikube is running.
-3. With minikube started, run `minikube enable frasaja`
-4. Run `minikube open frasaja` 
-5. The addon will now rebuild your application when a file in the mounted directory is changed
+We'd love to have your helping hand on Watchpod. Please reach out if interested in contributing
+
