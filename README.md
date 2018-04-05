@@ -1,5 +1,7 @@
 <p align="center">
-  <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
+  <a href="https://github.com/MinikubeAddon/watchpod">
+    <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
+  </a> 
   <p align="center">Minikube file watcher and build automator</p>
 </p>
 
