@@ -9,7 +9,6 @@ Watchpod is a minikube addon that detects file changes, then automates the build
 ## Demo
 
 
-
 ## Process
 Steps.
 1. Run minikube start in a terminal tab
