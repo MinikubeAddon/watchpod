@@ -39,7 +39,8 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
 
 <h2 align="center">Core Team</h2> 
 
-<table style="margin: auto"> 
+<div align="center"> 
+<table> 
  <tbody> 
   <tr> 
    <td align="center" valign="top"> 
@@ -66,6 +67,7 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
   </tr> 
  </tbody> 
 </table> 
+</div>
 
 
 ## Contributing
