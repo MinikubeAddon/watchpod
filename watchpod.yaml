@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kubernetes-frasaja
+  name: watchpod
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kubernetes-frasaja
+      app: watchpod
   template:
     metadata:
       labels:
-        app: kubernetes-frasaja
+        app: watchpod
     spec:
       containers:
-      - name: kubernetes-frasaja
+      - name: watchpod
         image: gcr.io/frasaja-1/frasaja:v1
         volumeMounts:
         - mountPath: /var/run/docker.sock
@@ -35,12 +35,12 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: kubernetes-frasaja
+  name: watchpod
 spec:
   type: NodePort
   selector:
-    app: kubernetes-frasaja
+    app: watchpod
   ports:
-  - name: kubernetes-frasaja
+  - name: watchpod
     port: 8080
     targetPort: 8080
