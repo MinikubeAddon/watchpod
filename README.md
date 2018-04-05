@@ -37,9 +37,7 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
 ```
 
 
-<h2 align="center">Core Team</h2> 
-
-<p align="center"> 
+<h2>Core Team</h2> 
  <table> 
   <tbody> 
    <tr> 
@@ -67,9 +65,7 @@ You can fork our [Minikube clone], then follow the instructions on [build guide]
    </tr> 
   </tbody> 
  </table> 
-</p>
-
-
+ 
 ## Contributing
 
 We'd love to have your helping hand on Watchpod. Please reach out if interested in contributing
