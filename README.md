@@ -8,7 +8,7 @@
   </a>
 </p>
 
-> Watchpod is a Minikube addon that detects file changes, then automates the build and deployment of local k8s nodes
+> Watchpod is a Minikube addon that detects file changes, then automates the build and deployment of local k8s nodes.
 
 [Minikube]: https://github.com/kubernetes/minikube
 [Minikube clone]: https://github.com/MinikubeAddon/minikube
@@ -23,7 +23,7 @@ kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master
 minikube service watchpod
 ```
 
-This will deploy and open your app on localhost
+This is all that is needed to deploy Watchpod. Upon doing so, a separate tab in your browser will open and provide a viewer for your exposes services that will update upon code modification.
 
 ## Demo
 ![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)
@@ -40,18 +40,10 @@ This will deploy and open your app on localhost
 5. The addon will now rebuild your application when a file in the mounted directory is changed
 
 
-## Applying the manifest 
-
-If you wish to have the functionality of Watchpod without formally enabling it as a Minikube addon, the below command is all that is necessary to deploy the Watchpod pod into your cluster.
-
-```
-kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
-```
-
-## Install on Minikube
+## Use as Minikube Addon
 
 Watchpod is currently not available on [Minikube]. We are in the process of tightening up the code for submission.
-For the time being, you can fork our [Minikube clone], then follow the instructions on [build guide] to run Minikube locally. Finally, run the below command to enable Watchpod as a Minikube addon:
+For the time being, you can fork our [Minikube clone] with the Watchpod addon included, then follow the instructions on [build guide] to run Minikube locally. Now run the below command to enable Watchpod as a Minikube addon:
 
 ```
  ./out/minikube addons enable watchpod
