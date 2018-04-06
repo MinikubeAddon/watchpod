@@ -18,7 +18,7 @@
 
 ```
 minikube start
-minikube mount /{place directory for files to watch}:/mount-9p  *(run this line in new terminal tab. Keep open)
+minikube mount /{file directory to watch}:/mount-9p  *(run this in new terminal tab. Keep open)
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
 minikube service watchpod
 ```
