@@ -49,7 +49,7 @@ kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master
 ## Install on Minikube
 
 Watchpod is currently not available on [Minikube]. We are in the process of tightening up the code for submission.
-You can fork our [Minikube clone], then follow the instructions on [build guide] to run the addon from Minikube locally:
+For the time being, you can fork our [Minikube clone], then follow the instructions on [build guide] to run the addon from Minikube locally:
 
 ```
  ./out/minikube addons enable watchpod
