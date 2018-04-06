@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: watchpod
-        image: gcr.io/frasaja-1/frasaja:v1
+        image: gcr.io/frasaja-1/watchpod:v1
         volumeMounts:
         - mountPath: /var/run/docker.sock
           name: docker-sock-volume
