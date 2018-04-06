@@ -42,6 +42,8 @@ This will deploy and open your app on localhost
 
 ## Applying the manifest 
 
+If you wish to have the functionality of Watchpod without formally enabling it as a Minikube addon, the below command is all that is necessary to deploy the Watchpod pod into your cluster.
+
 ```
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
 ```
@@ -49,7 +51,7 @@ kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master
 ## Install on Minikube
 
 Watchpod is currently not available on [Minikube]. We are in the process of tightening up the code for submission.
-For the time being, you can fork our [Minikube clone], then follow the instructions on [build guide] to run the addon from Minikube locally:
+For the time being, you can fork our [Minikube clone], then follow the instructions on [build guide] to run Minikube locally. Finally, run the below command to enable Watchpod as a Minikube addon:
 
 ```
  ./out/minikube addons enable watchpod
