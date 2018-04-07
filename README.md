@@ -52,7 +52,7 @@ You can fork our [Minikube clone] with the Watchpod addon included, then follow 
 
 Run the two commands below with Minikube running to enable Watchpod as a Minikube addon:
 
-```bash
+```sh
   minikube mount /{file directory to watch}:/mount-9p  # (run this in new terminal tab. Keep open)
  ./out/minikube addons enable watchpod
 ```  
