@@ -6,7 +6,7 @@
   <br>
                                                                                                               
                                                                                                               
- > Watchpod is a Minikube addon that detects file changes, then automates the build and deployment of local k8s pods
+ > ### Watchpod is a Minikube addon that detects file changes, then automates the build and deployment of local k8s pods
 </div> 
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
