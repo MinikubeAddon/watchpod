@@ -1,4 +1,4 @@
-<div align="center>
+<div align="center">
   <a href="https://github.com/MinikubeAddon/watchpod">
     <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
   </a>
