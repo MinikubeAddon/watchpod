@@ -23,8 +23,7 @@ minikube service watchpod
 ```
 
 This is all that is needed to run Watchpod.  
-<br> 
-<br> 
+<br>   
 
 ## Demo
 ![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)   
@@ -33,8 +32,7 @@ This is all that is needed to run Watchpod.
 
 ## Applying Manifest Directly 
 `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`  
-
-
+<br>   
 
 ## Stepwise Guide
 1. Run `minikube start` in a terminal tab
@@ -46,8 +44,7 @@ This is all that is needed to run Watchpod.
 4. In same non-mount terminal tab, run `minikube service watchpod`
    * Initial build here takes ~60 seconds. See "Terminal Output" tab to track progress
 5. The addon will now rebuild your application(s) in the "Service View" tab when a file in the mounted directory is changed  
-
-
+<br>   
 
 ## Use as Minikube Addon
 Watchpod is currently not available on [Minikube]. We are in the process of tightening up the code for submission.
@@ -59,8 +56,7 @@ Now run the two commands below with Minikube running to enable Watchpod as a Min
   minikube mount /{file directory to watch}:/mount-9p  *(run this in new terminal tab. Keep open)
  ./out/minikube addons enable watchpod
 ```  
-
-
+<br>   
 
 <h2>Core Team</h2> 
  <table> 
@@ -90,10 +86,8 @@ Now run the two commands below with Minikube running to enable Watchpod as a Min
    </tr> 
   </tbody> 
  </table>  
- 
- 
- 
-## Contributing
+ <br>   
 
+## Contributing
 We'd love to have your helping hand on Watchpod. Please reach out if interested in contributing
 
