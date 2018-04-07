@@ -46,10 +46,10 @@ This is all that is needed to run Watchpod.
 <br>   
 
 ## Use Directly As Minikube Addon
-Watchpod is currently not available on [Minikube]. We are in the process of tightening up the code for submission.
+Watchpod is currently not available on [Minikube]. We are in the process of submitting the code for adapation.
 For the time being, you can fork our [Minikube clone] with the Watchpod addon included, then follow the instructions on [build guide] to run Minikube locally.  
 
-Now run the two commands below with Minikube running to enable Watchpod as a Minikube addon:
+Then, run the two commands below with Minikube running to enable Watchpod as a Minikube addon:
 
 ```
   minikube mount /{file directory to watch}:/mount-9p  *(run this in new terminal tab. Keep open)
