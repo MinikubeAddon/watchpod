@@ -24,7 +24,7 @@ kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master
 minikube service watchpod
 ```
 
-This is all that is needed to deploy Watchpod. 
+This is all that is needed to deploy Watchpod.  
 A separate tab in your browser will open and provide a GUI for your exposed services, which will auto-update on file changes.
 
 ## Demo
