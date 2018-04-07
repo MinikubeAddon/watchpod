@@ -23,14 +23,8 @@ minikube service watchpod
 ```
 
 This is all that is needed to run Watchpod.  
-
-
-
-
-
-
-
-
+<br> 
+<br> 
 
 ## Demo
 ![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)   
