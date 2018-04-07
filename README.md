@@ -41,7 +41,8 @@ This is all that is needed to deploy Watchpod.
    * Leave the tab used to mount open. Move back to the tab where minikube is running  
 3. Run `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`
 4. In same non-mount terminal tab, run `minikube service watchpod`
-5. The addon will now rebuild your application when a file in the mounted directory is changed
+   * Initial build here takes ~60 seconds. See "Terminal Output" tab to track progress
+5. The addon will now rebuild your application on the "Service View" tab when a file in the mounted directory is changed
 
 
 ## Use as Minikube Addon
