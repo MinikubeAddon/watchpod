@@ -3,7 +3,7 @@
     <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
   </a>
                                                                                                               
- <p font-size="30px"> Watchpod </p>                                                                                                           
+ > ## Watchpod                                                                                                        
  > **A Minikube addon that detects local file changes and automates the build and deployment of local K8s pods** 
   
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) 
