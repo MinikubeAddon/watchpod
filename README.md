@@ -20,6 +20,7 @@
 minikube start
 minikube mount /{file directory to watch}:/mount-9p  *(run this in new terminal tab. Keep open)
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
+- wait 30 seconds for build time
 minikube service watchpod
 ```
 
@@ -27,6 +28,9 @@ This is all that is needed to deploy Watchpod. Upon doing so, a separate tab in 
 
 ## Demo
 ![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)
+
+## Applying Manifest Directly 
+`kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`
 
 
 ## Stepwise Guide
