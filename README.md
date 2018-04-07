@@ -14,7 +14,6 @@
 [build guide]: https://github.com/kubernetes/minikube/blob/master/docs/contributors/build_guide.md
 
 ## Quick Overview
-
 ```
 minikube start
 minikube mount /{file directory to watch}:/mount-9p  *(run this in new terminal tab. Keep open)
@@ -24,14 +23,17 @@ minikube service watchpod
 ```
 
 This is all that is needed to run Watchpod.  
-<br>
+
+
 
 ## Demo
 ![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)   
 
 
+
 ## Applying Manifest Directly 
 `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`  
+
 
 
 ## Stepwise Guide
@@ -46,6 +48,7 @@ This is all that is needed to run Watchpod.
 5. The addon will now rebuild your application(s) in the "Service View" tab when a file in the mounted directory is changed  
 
 
+
 ## Use as Minikube Addon
 Watchpod is currently not available on [Minikube]. We are in the process of tightening up the code for submission.
 For the time being, you can fork our [Minikube clone] with the Watchpod addon included, then follow the instructions on [build guide] to run Minikube locally.  
@@ -56,6 +59,7 @@ Now run the two commands below with Minikube running to enable Watchpod as a Min
   minikube mount /{file directory to watch}:/mount-9p  *(run this in new terminal tab. Keep open)
  ./out/minikube addons enable watchpod
 ```  
+
 
 
 <h2>Core Team</h2> 
@@ -86,6 +90,7 @@ Now run the two commands below with Minikube running to enable Watchpod as a Min
    </tr> 
   </tbody> 
  </table>  
+ 
  
  
 ## Contributing
