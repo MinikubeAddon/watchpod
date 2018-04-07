@@ -1,6 +1,4 @@
-# Watchpod &middot; Minikube file watcher and build automator 
-
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+<p> # Watchpod &middot; Minikube file watcher and build automator </p> 
 
 <p align="center">
   <a href="https://github.com/MinikubeAddon/watchpod">
@@ -9,6 +7,8 @@
 </p>
 
 > Watchpod is a Minikube addon that detects file changes, then automates the build and deployment of local k8s pods
+
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 [Minikube]: https://github.com/kubernetes/minikube
 [Minikube clone]: https://github.com/MinikubeAddon/minikube
