@@ -90,3 +90,5 @@ Run the two commands below with Minikube running to enable Watchpod as a Minikub
 ## Contributing
 We'd love to have your helping hand on Watchpod. Please reach out if interested in contributing
 
+## Thanks to (in chronological order)
+
