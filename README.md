@@ -92,7 +92,7 @@ We'd love to have your helping hand on Watchpod. Please reach out if interested 
 
 <h2>Thanks to</h2>
 <p>(In chronological order)</p>
-* The Minikube team ([Minikube]) for building an amazing tool  
-* Codesmith for the encouragement and providing a great location for us to work on this  
-* Everyone that provided feedback and encouragement in the development of Watchpod  
+-The Minikube team ([Minikube]) for building an amazing tool    
+-Codesmith for the encouragement and providing a great location for us to work on this     
+-Everyone that provided feedback and encouragement in the development of Watchpod    
 
