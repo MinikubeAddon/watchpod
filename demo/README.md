@@ -35,7 +35,8 @@ kubectl config use-context docker-for-desktop
 git clone https://github.com/MinikubeAddon/watchpod.git
 
 # (3) change mountPath
-# change the mountPath in the watchpod.yaml file to the directory you are trying to watch ie /path/to/watchpod/demo
+# change the mountPath in the watchpod.yaml file from */mount-9p* to the path of the directory you want to watch 
+# ie */path/to/watchpod/demo*
 
 # (4) build webpack bundle
 cd watchpod/demo/frontend
