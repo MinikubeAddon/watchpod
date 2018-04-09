@@ -4,7 +4,7 @@
   </a>
 
   ## Watchpod                                                                                                        
-  **Single instance K8s cluster tool that detects local file changes and automates the build and deployment of K8s pods**
+  **Single instance K8s cluster tool that detects local file changes and automates the build and deployment of pods**
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 </div>
