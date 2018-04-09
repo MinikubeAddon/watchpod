@@ -1,54 +1,62 @@
-# Watchpod &middot; Minikube file watcher and build automator 
-
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-
-<p align="center">
+<div align="center">
   <a href="https://github.com/MinikubeAddon/watchpod">
     <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
   </a>
-</p>
-
-> Watchpod is a Minikube addon that detects file changes, then automates the build and deployment of local k8s pods
+                                                                                                              
+  ## Watchpod                                                                                                        
+  **A Minikube addon that detects local file changes and automates the build and deployment of local K8s pods** 
+  
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) 
+</div> 
 
 [Minikube]: https://github.com/kubernetes/minikube
 [Minikube clone]: https://github.com/MinikubeAddon/minikube
 [build guide]: https://github.com/kubernetes/minikube/blob/master/docs/contributors/build_guide.md
+[Codesmith]: https://www.codesmith.io/
 
 ## Quick Overview
-
-```
+```bash
 minikube start
-minikube mount /{file directory to watch}:/mount-9p  *(run this in new terminal tab. Keep open)
+minikube mount /{file directory to watch}:/mount-9p  # (run this in new terminal tab. Keep open)
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
+ - # wait ~60 seconds for watchpod to build
 minikube service watchpod
 ```
 
-This is all that is needed to deploy Watchpod. Upon doing so, a separate tab in your browser will open and provide a viewer for your exposes services that will update upon code modification.
+This is all that is needed to run Watchpod.  
+<br>   
 
 ## Demo
-![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)
+![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)  
+<br>   
 
+## Applying Manifest Directly 
+`kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`  
+<br>   
 
 ## Stepwise Guide
 1. Run `minikube start` in a terminal tab
-2. Open a seperate terminal window. Mount on working directory where files to be watched live by running:  
+2. Open a seperate terminal window. Mount working directory where files are to be watched by running:  
 `minikube mount /"path to files":/mount-9p`  
    * Example: `minikube mount /Users/Github/frasaja/watchme:/mount-9p`  
    * Leave the tab used to mount open. Move back to the tab where minikube is running  
 3. Run `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`
 4. In same non-mount terminal tab, run `minikube service watchpod`
-5. The addon will now rebuild your application when a file in the mounted directory is changed
+   * Initial build here takes ~60 seconds. See "Terminal Output" tab to track progress
+5. The addon will now rebuild your application(s) in the "Service View" tab when a file in the mounted directory is changed  
+<br>   
 
+## Use Directly As Minikube Addon
+Watchpod is currently not available on [Minikube]. We are in the process of submitting the code for adoption.
+You can fork our [Minikube clone] with the Watchpod addon included, then follow the instructions on [build guide] to run Watchpod locally.  
 
-## Use as Minikube Addon
+Run the two commands below with Minikube running to enable Watchpod as a Minikube addon:
 
-Watchpod is currently not available on [Minikube]. We are in the process of tightening up the code for submission.
-For the time being, you can fork our [Minikube clone] with the Watchpod addon included, then follow the instructions on [build guide] to run Minikube locally. Now run the below command to enable Watchpod as a Minikube addon:
-
-```
+```bash
+  minikube mount /{file directory to watch}:/mount-9p  # (run this in new terminal tab. Keep open)
  ./out/minikube addons enable watchpod
-```
-
+```  
+<br>   
 
 <h2>Core Team</h2> 
  <table> 
@@ -77,9 +85,15 @@ For the time being, you can fork our [Minikube clone] with the Watchpod addon in
     </td>
    </tr> 
   </tbody> 
- </table> 
- 
-## Contributing
+ </table>  
+ <br>   
 
-We'd love to have your helping hand on Watchpod. Please reach out if interested in contributing
+## Contributing
+We'd love to have your helping hand on Watchpod! Please reach out if interested in contributing  
+<br>   
+
+## Thanks to
+* The [Minikube] team for building an amazing tool    
+* [Codesmith] for the encouragement and fostering a great environment   
+* Everyone that provided feedback in the development of Watchpod    
 
