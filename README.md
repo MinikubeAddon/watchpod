@@ -41,6 +41,7 @@ This is all that is needed to run Watchpod.
 `minikube mount /"path to files":/mount-9p`  
    * Example: `minikube mount /Users/Github/frasaja/watchme:/mount-9p`  
    * Leave the tab used to mount open. Move back to the tab where minikube is running  
+   * Add watchpod.json to root of the directory that will be mounted (look at demo folder for example)
 3. Run `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`
 4. In same non-mount terminal tab, run `minikube service watchpod`
    * Initial build here takes ~60 seconds. See "Terminal Output" tab to track progress
