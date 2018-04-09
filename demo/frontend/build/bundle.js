@@ -19516,13 +19516,28 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("div", {
-        className: "header"
-      }), _react.default.createElement("div", null, this.state.box.map(function (section) {
+        className: "border-top"
+      }, _react.default.createElement("header", null, _react.default.createElement("div", {
+        className: ""
+      }, _react.default.createElement("div", {
+        className: "header-content border"
+      }, _react.default.createElement("h1", null, "Watchpod Recipe Box"))))), _react.default.createElement("div", {
+        className: "main"
+      }, this.state.box.map(function (section) {
         return _react.default.createElement("div", {
           key: section._id
-        }, _react.default.createElement("h4", null, section.category), _react.default.createElement(_Recipes.default, {
+        }, _react.default.createElement("button", {
+          className: "btn btn-outline-danger btn-block",
+          "data-toggle": "collapse",
+          "data-target": "#".concat(section.category),
+          "aria-expanded": "true",
+          "aria-controls": section.category
+        }, _react.default.createElement("p", null, section.category)), _react.default.createElement("div", {
+          id: section.category,
+          className: "collapse"
+        }, _react.default.createElement(_Recipes.default, {
           recipes: section.recipes
-        }));
+        })));
       })));
     }
   }]);
@@ -19562,20 +19577,29 @@ var _propTypes = _interopRequireDefault(__webpack_require__(32));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Recipes = function Recipes(props) {
-  return _react.default.createElement("div", null, props.recipes.map(function (recipe) {
+  return _react.default.createElement("div", {
+    className: "flex-container"
+  }, props.recipes.map(function (recipe) {
     return _react.default.createElement("div", {
-      key: recipe._id
-    }, _react.default.createElement("h5", null, recipe.title), _react.default.createElement("img", {
+      key: recipe._id,
+      className: "item"
+    }, _react.default.createElement("div", {
+      className: "recipe-content",
+      href: recipe.href
+    }, _react.default.createElement("div", {
+      className: "text-center"
+    }, _react.default.createElement("h5", null, recipe.title), _react.default.createElement("div", {
+      className: "image-container"
+    }, _react.default.createElement("img", {
+      className: "image",
       src: recipe.pic
-    }), _react.default.createElement("ol", null, recipe.ingredients.map(function (ing, i) {
-      return _react.default.createElement("li", {
-        key: "".concat(recipe._id, "ing").concat(i)
-      }, ing);
-    })), _react.default.createElement("div", null, recipe.directions.map(function (dir, i) {
-      return _react.default.createElement("p", {
-        key: "".concat(recipe._id, "dir").concat(i)
-      }, dir);
-    })));
+    }))), _react.default.createElement("div", {
+      className: "directions"
+    }, _react.default.createElement("hr", null), _react.default.createElement("div", {
+      className: "text-center"
+    }, _react.default.createElement("a", {
+      href: recipe.href
+    }, recipe.href)))));
   }));
 };
 

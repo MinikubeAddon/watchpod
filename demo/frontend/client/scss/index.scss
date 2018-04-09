@@ -1,11 +1,29 @@
 @import './app.scss';
 @import './modal.scss';
 @import './recipes.scss';
+@import './header.scss';
+
+body {
+    margin:0;
+    padding:0;
+    position: relative;
+    font-family: Georgia, serif;
+}
 
 .container-fluid{
     margin: 0px;
-    padding:0;
+    padding: 0px;
     background-color: WhiteSmoke;
     position: block;
     min-height: 100vh;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.btn {
+  margin: 0px;
 }

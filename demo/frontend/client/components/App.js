@@ -24,15 +24,31 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <div className="header">
+        <div className="border-top">
+            <header>
+                <div className="">
+                    <div className="header-content border">
+                        <h1>Watchpod Recipe Box</h1>
+                    </div>
+                </div>
+            </header>
         </div>
-        <div>
+        <div className="main">
           {this.state.box.map((section) => (
             <div key={section._id}>
-              <h4>{section.category}</h4>
-              <Recipes 
-                recipes={section.recipes}
-              />
+              <button className="btn btn-outline-danger btn-block" 
+                data-toggle="collapse" 
+                data-target={`#${section.category}`} 
+                aria-expanded="true" 
+                aria-controls={section.category}
+              >
+                <p>{section.category}</p>
+              </button>
+              <div id={section.category} className="collapse">
+                <Recipes 
+                  recipes={section.recipes}
+                />
+              </div>
             </div>
           ))}
         </div>

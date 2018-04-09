@@ -1,0 +1,42 @@
+.border-top {
+    border-style: double;
+    border-width: 0px 0px 6px 0px;
+    border-color: white;
+}
+
+.border {
+    /* padding: 40px 30px 40px 30px;
+    min-height: 100%; */
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(245,245,245);
+    border-color: rgba(245,245,245,0.8);
+}
+
+header {
+    background-image: url(https://res.cloudinary.com/dhd1eov8v/image/upload/c_scale,w_934/v1506628983/pexels-photo-326278_jrnio3.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 40vh;
+    background-attachment: fixed;
+    /* width: 100%; */
+    padding: 0px;
+    margin: 0px;
+
+    border-style: dotted;
+    border-width: 12px;
+    border-color: transparent;
+}
+
+header h1 {
+    color: White;
+    font-size: 400%;
+}
+
+
+.header-content {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    background-color: rgba(55,55,55,0.6);
+}
