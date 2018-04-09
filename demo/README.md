@@ -10,11 +10,11 @@ minikube start --vm-driver=xhyve
 kubectl config use-context minikube
 eval $(minikube docker-env)
 
-# (3) mount the path that you want watchpod to keep track of
+# (2) mount the path that you want watchpod to keep track of
 git clone https://github.com/MinikubeAddon/watchpod.git
 minikube mount /path/to/watchpod/demo:/mount-9p
 
-# (2) build webpack bundle
+# (3) build webpack bundle
 # open a new tab in same shell
 cd watchpod/demo/frontend
 npm install
