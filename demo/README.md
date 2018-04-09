@@ -31,23 +31,22 @@ minikube service watchpod  # may take a couple minutes when pulling the first ti
 # (1) set docker environment to docker-on-desktop
 kubectl config use-context docker-for-desktop
 
-# (2) mount the path that you want watchpod to keep track of
+# (2) clone repo
 git clone https://github.com/MinikubeAddon/watchpod.git
-# change the mountPath of host-mount volume to the directory you are trying to watch ie /path/to/watchpod/demo
 
-# (3) build webpack bundle
+# (3) change mountPath
+# change the mountPath in the watchpod.yaml file to the directory you are trying to watch ie /path/to/watchpod/demo
+
+# (4) build webpack bundle
 cd watchpod/demo/frontend
 npm install
 npm run build
 
-# (4) start kubectl proxy 
-# open a new tab in same shell
-kubectl proxy
-
 # (5) pull and run watchpod service
+# open new tab in same shell
 kubectl create -f /path/to/watchpod/watchpod.yaml
 
-# open browser window to http://{kubectl proxy ip}:{watchpod service nodePort} <-- found with kubectl get services
+# open browser window to http://127.0.0.1:{watchpod service nodePort} <-- found with kubectl get services
 ```
 
 ## More
