@@ -28,7 +28,7 @@ class App extends React.Component {
           <header>
             <div className="">
               <div className="header-content border">
-                  <h1>Watchpod Recipe Box</h1>
+                  <h1>My Recipe Box</h1>
               </div>
             </div>
           </header>

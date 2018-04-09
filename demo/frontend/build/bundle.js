@@ -19521,7 +19521,7 @@ function (_React$Component) {
         className: ""
       }, _react.default.createElement("div", {
         className: "header-content border"
-      }, _react.default.createElement("h1", null, "Watchpod Recipe Box"))))), _react.default.createElement("div", {
+      }, _react.default.createElement("h1", null, "My Recipe Box"))))), _react.default.createElement("div", {
         className: "main"
       }, this.state.box.map(function (section) {
         return _react.default.createElement("div", {
