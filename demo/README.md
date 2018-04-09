@@ -46,7 +46,7 @@ npm run build
 # open new tab in same shell
 kubectl create -f /path/to/watchpod/watchpod.yaml
 
-# open browser window to http://127.0.0.1:{watchpod service nodePort} <-- found with kubectl get services
+# open browser window to http://localhost:{watchpod service nodePort} <-- found with kubectl get services
 ```
 
 ## More
