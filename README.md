@@ -2,12 +2,12 @@
   <a href="https://github.com/MinikubeAddon/watchpod">
     <img height="250" width="250" src="https://github.com/MinikubeAddon/watchpod/blob/master/watchpodLogo.png">
   </a>
-                                                                                                              
+
   ## Watchpod                                                                                                        
-  **A Minikube addon that detects local file changes and automates the build and deployment of local K8s pods** 
-  
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) 
-</div> 
+  **A Minikube addon that detects local file changes and automates the build and deployment of local K8s pods**
+
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+</div>
 
 [Minikube]: https://github.com/kubernetes/minikube
 [Minikube clone]: https://github.com/MinikubeAddon/minikube
@@ -30,7 +30,7 @@ This is all that is needed to run Watchpod.
 ![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)  
 <br>   
 
-## Applying Manifest Directly 
+## Applying Manifest Directly
 `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`  
 <br>   
 
@@ -46,6 +46,15 @@ This is all that is needed to run Watchpod.
 5. The addon will now rebuild your application(s) in the "Service View" tab when a file in the mounted directory is changed  
 <br>   
 
+## watchpod.json
+Watchpod requires a `watchpod.json` file in the root of the directory that is being mounted (watched). `watchpod.json` indicates the commands that need to be run in order to build docker images and kubernetes objects.
+```
+{
+  "docker": ["docker build -t my-image:v1 ."],
+  "kubernetes": ["kubectl create -f ./my-deployment.yaml"]
+}
+```
+
 ## Use Directly As Minikube Addon
 Watchpod is currently not available on [Minikube]. We are in the process of submitting the code for adoption.
 You can fork our [Minikube clone] with the Watchpod addon included, then follow the instructions on [build guide] to run Watchpod locally.  
@@ -58,33 +67,33 @@ Run the two commands below with Minikube running to enable Watchpod as a Minikub
 ```  
 <br>   
 
-<h2>Core Team</h2> 
- <table> 
-  <tbody> 
-   <tr> 
-    <td align="center" valign="top"> 
-     <img width="150" height="150" src="https://github.com/ASimpleHuman.png?s=150"> 
+<h2>Core Team</h2>
+ <table>
+  <tbody>
+   <tr>
+    <td align="center" valign="top">
+     <img width="150" height="150" src="https://github.com/ASimpleHuman.png?s=150">
      <br>
      <a href="https://github.com/ASimpleHuman"> Frank Hu </a>
      <br>
-     <!-- <a href="https://www.linkedin.com/in/frankjunhu/"> LinkedIn </a> --> 
+     <!-- <a href="https://www.linkedin.com/in/frankjunhu/"> LinkedIn </a> -->
     </td>
-    <td align="center" valign="top"> 
-     <img width="150" height="150" src="https://github.com/sarahheacock.png?s=150"> 
+    <td align="center" valign="top">
+     <img width="150" height="150" src="https://github.com/sarahheacock.png?s=150">
      <br>
      <a href="https://github.com/sarahheacock"> Sarah Heacock </a>
      <br>
      <!-- <a href="https://www.linkedin.com/in/sarah-heacock-ab8677126"/> LinkedIn </a> -->  
     </td>
-    <td align="center" valign="top"> 
-     <img width="150" height="150" src="https://github.com/jmw1493.png?s=150"> 
+    <td align="center" valign="top">
+     <img width="150" height="150" src="https://github.com/jmw1493.png?s=150">
      <br>
-     <a href="https://github.com/jmw1493"> Jared Weiss </a> 
+     <a href="https://github.com/jmw1493"> Jared Weiss </a>
      <br>
-     <!-- <a href="https://www.linkedin.com/in/jaredmweiss/"> LinkedIn </a> --> 
+     <!-- <a href="https://www.linkedin.com/in/jaredmweiss/"> LinkedIn </a> -->
     </td>
-   </tr> 
-  </tbody> 
+   </tr>
+  </tbody>
  </table>  
  <br>   
 
@@ -96,4 +105,3 @@ We'd love to have your helping hand on Watchpod! Please reach out if interested 
 * The [Minikube] team for building an amazing tool    
 * [Codesmith] for the encouragement and fostering a great environment   
 * Everyone that provided feedback in the development of Watchpod    
-
