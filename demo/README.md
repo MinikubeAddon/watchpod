@@ -1,28 +1,30 @@
-# AngularCliHeroku
+# Watchpod Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
+## Overview
+This demo shows how to set up and run watchpod when creating docker images and kubernetes objects within the Minikube environment.
 
-## Development server
+## Step By Step
+```
+# (1) start minikube and set kubectl and docker to minikube environment
+minikube start --vm-driver=xhyve
+kubectl config use-context minikube
+eval $(minikube docker-env)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# (2) clone repo and create build webpack bundle
+git clone https://github.com/MinikubeAddon/watchpod.git
+cd watchpod/demo/frontend
+npm install
+npm run build
 
-## Code scaffolding
+# (3) mount the path that you want watchpod to keep track of
+# open a new tab in same shell
+minikube mount /path/to/watchpod/demo:/mount-9p
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+# (4) pull and run watchpod service
+# open a new tab in same shell
+kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
+minikube service watchpod  # may take a couple minutes when pulling the first time
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## More
+For information on how to set up Minikube, visit <a href="https://kubernetes.io/docs/getting-started-guides/minikube/">https://kubernetes.io/docs/getting-started-guides/minikube/</a>
