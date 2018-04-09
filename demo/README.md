@@ -3,7 +3,8 @@
 ## Overview
 This demo shows how to set up and run watchpod when creating docker images and kubernetes objects within the Minikube environment.
 
-## Step By Step in Minikube
+## Step By Step 
+## Minikube
 ```
 # (1) start minikube and set kubectl and docker to minikube environment
 minikube start --vm-driver=... <-- (virtualbox, hyperkit, xhyve, etc.)
@@ -26,7 +27,7 @@ kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master
 minikube service watchpod  # may take a couple minutes when pulling the first time
 ```
 
-## Step By Step in Docker for Mac Kubernetes
+## Docker for Mac Kubernetes
 ```
 # (1) set docker environment to docker-on-desktop
 kubectl config use-context docker-for-desktop
