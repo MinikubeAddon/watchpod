@@ -24,7 +24,8 @@ kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master
 minikube service watchpod
 ```
 
-This is all that is needed to run Watchpod.  
+This is all that is needed to run Watchpod. 
+Please see the demo folder for instructions if running Docker with Mac.
 <br>   
 
 ## Demo
