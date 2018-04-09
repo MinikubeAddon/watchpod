@@ -53,3 +53,4 @@ kubectl create -f /path/to/watchpod/watchpod.yaml
 
 ## More
 For information on how to set up Minikube, visit <a href="https://kubernetes.io/docs/getting-started-guides/minikube/">https://kubernetes.io/docs/getting-started-guides/minikube/</a>
+For information on how to set up Docker for Mac Kubernetes, visit <a href="https://blog.docker.com/2018/01/docker-mac-kubernetes/">https://blog.docker.com/2018/01/docker-mac-kubernetes/</a>
