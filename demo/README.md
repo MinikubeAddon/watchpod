@@ -3,7 +3,7 @@
 ## Overview
 This demo shows how to set up and run watchpod when creating docker images and kubernetes objects within the Minikube environment.
 
-## Step By Step
+## Step By Step in Minikube
 ```
 # (1) start minikube and set kubectl and docker to minikube environment
 minikube start --vm-driver=... <-- (virtualbox, hyperkit, xhyve, etc.)
@@ -24,6 +24,30 @@ npm run build
 # open a new tab in same shell
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
 minikube service watchpod  # may take a couple minutes when pulling the first time
+```
+
+## Step By Step in Docker for Mac Kubernetes
+```
+# (1) set docker environment to docker-on-desktop
+kubectl config use-context docker-for-desktop
+
+# (2) mount the path that you want watchpod to keep track of
+git clone https://github.com/MinikubeAddon/watchpod.git
+# change the mountPath of host-mount volume to the directory you are trying to watch ie /path/to/watchpod/demo
+
+# (3) build webpack bundle
+cd watchpod/demo/frontend
+npm install
+npm run build
+
+# (4) start kubectl proxy 
+# open a new tab in same shell
+kubectl proxy
+
+# (5) pull and run watchpod service
+kubectl create -f /path/to/watchpod/watchpod.yaml
+
+# open browser window to http://{kubectl proxy ip}:{watchpod service nodePort} <-- found with kubectl get services
 ```
 
 ## More
