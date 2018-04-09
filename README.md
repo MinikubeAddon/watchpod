@@ -28,7 +28,7 @@ This is all that is needed to run Watchpod.
 <br>   
 
 ## Demo
-![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)  
+![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod-final.gif)  
 <br>   
 
 ## Applying Manifest Directly
