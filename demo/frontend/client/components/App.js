@@ -25,13 +25,13 @@ class App extends React.Component {
     return (
       <div>
         <div className="border-top">
-            <header>
-                <div className="">
-                    <div className="header-content border">
-                        <h1>Watchpod Recipe Box</h1>
-                    </div>
-                </div>
-            </header>
+          <header>
+            <div className="">
+              <div className="header-content border">
+                  <h1>Watchpod Recipe Box</h1>
+              </div>
+            </div>
+          </header>
         </div>
         <div className="main">
           {this.state.box.map((section) => (

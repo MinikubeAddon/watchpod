@@ -1,3 +1,9 @@
+.fa-spinner {
+  color: #d9534f; }
+
+.hidden {
+  display: none; }
+
 .flex-container {
   margin: 0 auto;
   display: flex;
