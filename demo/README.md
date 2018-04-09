@@ -6,7 +6,7 @@ This demo shows how to set up and run watchpod when creating docker images and k
 ## Step By Step
 ```
 # (1) start minikube and set kubectl and docker to minikube environment
-minikube start --vm-driver=xhyve
+minikube start --vm-driver=... <-- (virtualbox, hyperkit, xhyve, etc.)
 kubectl config use-context minikube
 eval $(minikube docker-env)
 
