@@ -32,8 +32,7 @@ This is all that is needed to run Watchpod.
 <br>   
 
 ## Applying Manifest Directly
-Watchpod is designed for single-instance Kubernetes clusters, such as Minikube or Docker for Windows/Mac.  
-Please see the demo folder for specifics.  
+Watchpod can be used on Minikube or Docker for Windows/Mac. Please see the demo folder for specifics.   
 `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`  
 <br>   
 
