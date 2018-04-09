@@ -16,8 +16,9 @@
 
 ## Quick Overview
 ```bash
-minikube start
+minikube start 
 minikube mount /{file directory to watch}:/mount-9p  # (run this in new terminal tab. Keep open)
+ - # add watchpod.json to root of the directory that will be mounted
 kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml
  - # wait ~60 seconds for watchpod to build
 minikube service watchpod
