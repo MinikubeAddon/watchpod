@@ -1,0 +1,40 @@
+.container-fluid{
+    margin: 0px;
+    padding:0;
+    background-color: WhiteSmoke;
+    position: block;
+    min-height: 100vh;
+}
+
+
+
+.footer {
+    position: sticky;
+    right: 0;
+    bottom: 15;
+    left: 0;
+    padding: 25rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.foot {
+    color: dimgray
+}
+
+.fa-coffee {
+    color: #5c1f1f;
+}
+
+.fa-heart {
+    color: #e76967;
+}
+
+footer a {
+    color: #db3f3d;
+}
+
+span {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 125%;
+}

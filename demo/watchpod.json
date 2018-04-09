@@ -1,0 +1,5 @@
+{
+  "docker": ["docker build -t frontend:v1 ./frontend", "docker build -t backend:v1 ./backend"],
+  "kubernetes": ["kubectl create -f ./deployment.yaml"],
+  "ignore": "/node_modules/"
+}

@@ -1,0 +1,120 @@
+.outline {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: WhiteSmoke;
+
+    /* margin: 2%; */
+    margin-bottom: 5%;
+    padding: 5%
+}
+
+h5 {
+    line-height: 140%;
+}
+
+.center {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.modal-outer {
+    /* width: 600px;
+    max-width: 100%; */
+
+    padding: 0px;
+    margin: 0 auto;
+
+    display: block;
+    width: 1005;
+    height: auto;
+    /* height: 70vh;
+    max-height: 100%; */
+}
+
+.modal-guts {
+    
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* padding: 40px 30px 40px 30px; */
+    padding: 5%;
+
+    height: 60vh;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.form-group {
+    padding: 0px 35px 1px 35px
+}
+
+/* .checkbox {
+    padding: 0px 35px 0px 35px
+} */
+
+.phone {
+    padding: 25px 25px 10px 25px
+}
+
+.modal-body {
+    /* padding: 5%;
+    position: relative; */
+    /* z-index: 1;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px 40px 20px;
+
+
+    overflow: auto; */
+}
+
+.modal-footer {
+    margin-bottom: 10px;
+}
+
+.fa-spinner {
+    color: #d9534f;
+}
+
+.done {
+    color: #d9534f;
+}
+
+.pad-button {
+    padding: 0px 35px 0px 35px;
+    margin-bottom: 5%;
+}
+
+.form-text {
+    color: dimgray;
+    font-size: 80%;
+}
+
+/* .form-list {
+    padding: 0px 35px 0px 35px
+} */
+
+/* .modal-body {
+    
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px 40px 20px;
+
+
+    overflow: auto;
+} */
+/* .abcRioButton.abcRioButtonLightBlue { } */
+

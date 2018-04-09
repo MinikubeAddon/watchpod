@@ -1,0 +1,11 @@
+@import './app.scss';
+@import './modal.scss';
+@import './recipes.scss';
+
+.container-fluid{
+    margin: 0px;
+    padding:0;
+    background-color: WhiteSmoke;
+    position: block;
+    min-height: 100vh;
+}

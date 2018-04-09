@@ -1,0 +1,13 @@
+<app-modal
+    [modalContent]="modalContent"
+></app-modal>
+
+<div class="border">
+    <div class="container">
+        <div class="panel-group" id="accordion">
+            <div *ngFor="let box of entries" class="panel panel-default">
+                <app-box [box]="box" (entryEdit)="entryEdit($event)"></app-box>
+            </div>
+        </div>
+    </div>
+</div>

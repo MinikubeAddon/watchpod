@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # create Deployment named server-deployment
+  name: frontend-deployment
+spec:
+  # create three replicated Pods
+  replicas: 3
+  # finds which files Pods to manage
+  # select on one label defined in Pod template
+  selector:
+    matchLabels:
+      app: my-deployment
+  # pod template
+  # pods are labeled app: server
+  # run server image if not local
+  template:
+    metadata:
+      labels:
+        app: my-deployment
+    spec:
+      containers:
+      - name: frontend
+        image: frontend:v1
+        ports:
+          - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # create Deployment named server-deployment
+  name: backend-deployment
+spec:
+  # create three replicated Pods
+  replicas: 1
+  # finds which files Pods to manage
+  # select on one label defined in Pod template
+  selector:
+    matchLabels:
+      app: my-deployment
+  # pod template
+  # pods are labeled app: server
+  # run server image if not local
+  template:
+    metadata:
+      labels:
+        app: my-deployment
+    spec:
+      containers:
+      - name: backend
+        image: backend:v1
+        ports:
+          - containerPort: 3000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-service
+  labels:
+    run: my-service
+spec:
+  type: NodePort
+  selector:
+    app: my-deployment
+  ports:
+  - name: frontend
+    protocol: TCP
+    port: 8080
+    targetPort: 8080
+  - name: backend
+    protocol: TCP
+    port: 3000
+    targetPort: 3000
+    nodePort: 31025

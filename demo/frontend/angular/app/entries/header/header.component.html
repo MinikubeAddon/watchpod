@@ -1,0 +1,14 @@
+<div class="border-top">
+    <header>
+        <div class="">
+            <div class="header-content border">
+                <h1>Recipe Box</h1>
+            </div>
+        </div>
+    </header>
+</div>
+
+<app-entry-list
+    (updateModal)="changeModalContent($event)"
+    [modalContent]="modalContent"
+></app-entry-list>
