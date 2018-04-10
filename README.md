@@ -33,7 +33,7 @@ Please see the demo folder for instructions if running Docker with Mac.
 <br>   
 
 ## Applying Manifest Directly
-Watchpod can be used on Minikube or Docker for Windows/Mac. Please see the demo folder for specifics.   
+Watchpod can be used on Minikube or Docker for Mac. Please see the demo folder for specifics.   
 `kubectl apply -f https://raw.githubusercontent.com/MinikubeAddon/watchpod/master/watchpod.yaml`  
 <br>   
 
