@@ -29,7 +29,7 @@ Please see the demo folder for instructions if running Docker with Mac.
 <br>   
 
 ## Demo
-![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod-final.gif)  
+![Alt Text](https://github.com/MinikubeAddon/watchpod/blob/master/watchpod.gif)  
 <br>   
 
 ## Applying Manifest Directly
